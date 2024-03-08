@@ -1,0 +1,32 @@
+{
+  "version": "35.0.0",
+  "files": {
+    "ebc07e2cba7d3a3bbed95895304b76d221189dd23e512e2bbfc294b1118eb36f": {
+      "source": {
+        "path": "asset.ebc07e2cba7d3a3bbed95895304b76d221189dd23e512e2bbfc294b1118eb36f",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "ebc07e2cba7d3a3bbed95895304b76d221189dd23e512e2bbfc294b1118eb36f.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "e3dd6138020c1c1a84ebb6c4c5221fa3a54f9e542f2394213ee25463d3767656": {
+      "source": {
+        "path": "BankingStatusApp.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "e3dd6138020c1c1a84ebb6c4c5221fa3a54f9e542f2394213ee25463d3767656.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
